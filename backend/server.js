@@ -5,7 +5,7 @@ const app = express();
 const chats = require("./data/data");
 const port = process.env.PORT || 5000;
 
-app.get("/", (req, res) => {
+app.get("/api/chat", (req, res) => {
   res.send(chats);
 });
 
